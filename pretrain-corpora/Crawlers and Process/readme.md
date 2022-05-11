@@ -2,7 +2,7 @@
 
 Examples for crawling and preprocessing corpora for conflict study.
 
-**./Crawlers**: example crawlers for two types of sources. We combined [Newspaper3k](https://newspaper.readthedocs.io/en/latest/) and manually designed patterns with [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+**./Crawlers**: example crawlers for two types of sources.
 - News wires 
 - Organizations: 
     - UN: &emsp; UN News, UNHCR, UNODC, OHCHR
@@ -23,5 +23,3 @@ Examples for crawling and preprocessing corpora for conflict study.
 - wiki_relevant: &emsp; patterns for filtering relevant news wires
 - irelevant_keywords: &emsp; patterns for filtering out not relevant news wires
 - wiki_relevant_exclude: &emsp; additional patterns for filtering out not relevant wikipedia documents by categories
-
-        
