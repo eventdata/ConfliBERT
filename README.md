@@ -77,7 +77,6 @@ Due to the copyright, we provide a few samples in [./pretrain-corpora/Samples](h
 ## Pretraining Scripts
 We followed the same pretraining scripts run_mlm.py from Huggingface [(The original link)](https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py).
 Below is an example using 8 GPUs. We have provided our parameters in the Appendix. However, you should change the parameters according to your own devices:
-<details>
 	
 ```	
 	export NGPU=8; nohup python -m torch.distributed.launch --master_port 12345 \
@@ -109,8 +108,7 @@ Below is an example using 8 GPUs. We have provided our parameters in the Appendi
 	--adam_beta1 0.9 --adam_beta2 0.98 --adam_epsilon 1e-6 \
 	--fp16 True --weight_decay=0.01
 ```
-	
-</details>
+
 
 ## Citation
 
