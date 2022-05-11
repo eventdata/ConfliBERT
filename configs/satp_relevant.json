@@ -2,7 +2,7 @@
     "task": "multilabel",
     "num_of_seeds": 10,
     "initial_seed": 123,
-    "epochs_per_seed": 10,
+    "epochs_per_seed": 5,
     "train_batch_size": 16,
     "max_seq_length": 256,
     "models": [
