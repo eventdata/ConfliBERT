@@ -56,7 +56,7 @@ Due to the copyright, we provide a few samples in [./pretrain-corpora](https://g
 
 
 ## Pretraining Scripts
-We followed the same pretraining scripts run_mlm.py from Huggingface[(The original link)](https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py).
+We followed the same pretraining scripts run_mlm.py from Huggingface [(The original link)](https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py).
 Below is an example using 8 GPUs. We have provided our parameters in the Appendix. However, you should change the parameters according to your own devices:
 <details>
 	
