@@ -35,14 +35,14 @@ You can import the models directly via Huggingface API:
 The usage of ConfliBERT is the same as other BERT models in Huggingface.
 
 We provided two examples using [Simple Transformers](https://simpletransformers.ai/).
-The 1st step is to preprocess the datasets into the required formats in ./data.
+The 1st step is to preprocess the datasets into the required formats in [./data](https://github.com/eventdata/ConfliBERT/tree/main/data).
 
 <ol>
   <li>IndiaPoliceEvents_sentence_level for classfication tasks. The format for classification tasks is sentence + labels seperated by tabs.</li>
   <li>re3d for NER tasks in CONLL format</li>
 </ol>
 
-The 2nd step is to create the corresponding config files with the correct tasks from ["binary", "multiclass", "multilabel", "ner"].
+The 2nd step is to create the corresponding config files in [./configs](https://github.com/eventdata/ConfliBERT/tree/main/configs) with the correct tasks from ["binary", "multiclass", "multilabel", "ner"].
 
 Finally, you can run
 	
