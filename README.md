@@ -46,13 +46,13 @@ The 2nd step is to create the corresponding config files in [./configs](https://
 
 Finally, you can run
 	
-	CUDA_VISIBLE_DEVICES=0 finetune_data.py --dataset IndiaPoliceEvents_sentence_level --report_per_epoch
+	CUDA_VISIBLE_DEVICES=0 python finetune_data.py --dataset IndiaPoliceEvents_sentence_level --report_per_epoch
 	
 
 	
 ## Pretraining Corpus
-We have gatherred a huge corpus in politics and conflicts domain (33 GB) for pretraining ConfliBERT.
-Due to the copyright, we provide samples in.  These samples follow the format of "one sentence per line format".
+We have gathered a large corpus in politics and conflicts domain (33 GB) for pretraining ConfliBERT.
+Due to the copyright, we provide a few samples in [./pretrain-corpora](https://github.com/eventdata/ConfliBERT/tree/main/pretrain-corpora).  These samples follow the format of "one sentence per line format". See more details in our paper's Section 2 and Appendix.
 
 
 ## Pretraining Scripts
