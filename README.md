@@ -101,5 +101,5 @@ If you find this repo useful in your research, please consider citing:
 	  title={ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence},
 	  author={Hu, Yibo and Hosseini, Mohammad Saleh and Skorupa Parolin, Erick and Osorio, Javier and Khan, Latifur and Brandt, Patrick and D'Orazio, Vito},
 	  booktitle={Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-	  year={2021}
+	  year={2022}
 	}
