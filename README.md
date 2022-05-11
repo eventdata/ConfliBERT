@@ -24,7 +24,7 @@ We provided four versions of ConfliBERT:
 </ol>
 
 
-You can import the models directly via Huggingface API:
+You can import the above four models directly via Huggingface API:
 
 	from transformers import AutoTokenizer, AutoModelForMaskedLM
 	tokenizer = AutoTokenizer.from_pretrained("snowood1/ConfliBERT-scr-uncased", use_auth_token=True)
