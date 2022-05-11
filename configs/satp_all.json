@@ -1,0 +1,56 @@
+{
+    "task": "multilabel",
+    "num_of_seeds": 10,
+    "initial_seed": 123,
+    "epochs_per_seed": 10,
+    "train_batch_size": 16,
+    "max_seq_length": 256,
+    "models": [
+        {
+            "model_name": "confliBERT-cased",
+            "model_path": "./pretrained/conflBERT_cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "confliBERT-uncased",
+            "model_path": "./pretrained/conflBERT_uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        },
+        {
+            "model_name": "bert-base-cased",
+            "model_path": "bert-base-cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "bert-base-uncased",
+            "model_path": "bert-base-uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        },
+        {
+            "model_name": "bert-base-cased-cont",
+            "model_path": "./pretrained/conflBERT_cased_cont",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "bert-base-uncased-cont",
+            "model_path": "./pretrained/conflBERT_uncased_cont",
+            "architecture": "bert",
+            "do_lower_case": true
+        },
+        {
+            "model_name": "roberta-base",
+            "model_path": "roberta-base",
+            "architecture": "roberta"
+        },
+        {
+            "model_name": "confliroberta",
+            "model_path": "./pretrained/conflRoBERTa",
+            "architecture": "roberta"
+        }
+    ]
+}
