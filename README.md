@@ -32,21 +32,19 @@ You can import the models directly via Huggingface API:
 
 
 ## Evaluation	
-You can use Huggingface examples or any packages for finetuning ConfliBERT the same as other BERT.
-Here, we provided examples using [Simple Transformers](https://simpletransformers.ai/)	
-We provided two example datasets and their config files in ./data and ./configs. They are:
+The usage of ConfliBERT is the same as other BERT models in Huggingface.
+
+We provided two examples using [Simple Transformers](https://simpletransformers.ai/).
+The 1st step is to preprocess the datasets into the required formats in ./data.
 
 <ol>
-  <li>IndiaPoliceEvents_sentence_level for classfication tasks</li>
-  <li>re3d for NER tasks</li>
+  <li>IndiaPoliceEvents_sentence_level for classfication tasks. The format for classification tasks is sentence + labels seperated by tabs.</li>
+  <li>re3d for NER tasks in CONLL format</li>
 </ol>
 
-To use our scripts, you need to preprocess the datasets into the required formats shown in our repo.
-The format for classification tasks is sentence + labels seperated by tabs.
-The format for NER tasks is CONLL format.
-Then you need to create a config file with the dataset's same name. You also need to define the tasks in the config file.
-The tasks we cover is "binary", "multiclass", "multilabel", or "ner".
-After you defined the configs, you can run:
+The 2nd step is to create the corresponding config files with the correct tasks from ["binary", "multiclass", "multilabel", "ner"].
+
+Finally, you can run
 	
 	CUDA_VISIBLE_DEVICES=0 finetune_data.py --dataset IndiaPoliceEvents_sentence_level --report_per_epoch
 	
