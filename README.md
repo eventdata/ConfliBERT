@@ -34,19 +34,23 @@ You can import the models directly via Huggingface API:
 ## Evaluation	
 You can use Huggingface examples or any packages for finetuning ConfliBERT the same as other BERT.
 Here, we provided examples using [Simple Transformers](https://simpletransformers.ai/)	
-	
-	CUDA_VISIBLE_DEVICES=0 finetune_data.py --dataset 20news --report_per_epoch
-	
-We provided three example dataset tasks in ./data. They are:
+We provided two example datasets and their config files in ./data and ./configs. They are:
 
 <ol>
-  <li>bbc_news for binary classfication</li>
-  <li>re3d for NER</li>
+  <li>IndiaPoliceEvents_sentence_level for classfication tasks</li>
+  <li>re3d for NER tasks</li>
 </ol>
 
-You can download the corresponding datasets in the paper. 
+To use our scripts, you need to preprocess the datasets into the required formats shown in our repo.
+The format for classification tasks is sentence + labels seperated by tabs.
+The format for NER tasks is CONLL format.
+Then you need to create a config file with the dataset's same name. You also need to define the tasks in the config file.
+The tasks we cover is "binary", "multiclass", "multilabel", or "ner".
+After you defined the configs, you can run:
+	
+	CUDA_VISIBLE_DEVICES=0 finetune_data.py --dataset IndiaPoliceEvents_sentence_level --report_per_epoch
+	
 
-To use our scripts, you need to preprocess them into the required format shown in our repo.
 	
 ## Pretraining Corpus
 We have gatherred a huge corpus in politics and conflicts domain (33 GB) for pretraining ConfliBERT.
