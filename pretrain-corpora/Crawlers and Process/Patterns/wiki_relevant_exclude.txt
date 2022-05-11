@@ -1,0 +1,21 @@
+album
+fiction
+firm
+film
+paralympic
+sport
+cemeter
+novel
+game
+play
+popular culture
+Environment of
+\w+ball
+desgin
+Wildlife
+martial
+BC\b
+accident
+disaster
+Ships built
+Ships of\b
