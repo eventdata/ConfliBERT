@@ -53,7 +53,7 @@ Below is the summary of the publicly available datasets:
 | InsightCrime            | https://figshare.com/s/73f02ab8423bb83048aa                                  |
 | MUC-4                   | https://github.com/xinyadu/grit_doc_event_entity/tree/master/data/muc        |
 | re3d                    | https://github.com/juand-r/entity-recognition-datasets/tree/master/data/re3d |
-| SATP                    | https://satp.org                                                             |	
+| SATP                    | https://github.com/javierosorio/SATP                                         |	
 
 
 To use your own datasets, the 1st step is to preprocess the datasets into the required formats in [./data](https://github.com/eventdata/ConfliBERT/tree/main/data). For example,
