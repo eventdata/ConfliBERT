@@ -39,7 +39,7 @@ We provided multiple examples using [Simple Transformers](https://simpletransfor
 	CUDA_VISIBLE_DEVICES=0 python finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch
 
 
-Below is the summary of the public available datasets:
+Below is the summary of the publicly available datasets:
 
 | Dataset                 | Links                                                                        |
 |-------------------------|------------------------------------------------------------------------------|
