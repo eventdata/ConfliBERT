@@ -1,4 +1,4 @@
-IndiaPoliceEvents_sentence_level.json:  An example for classification tasks.
+IndiaPoliceEvents_sents.json:  An example for classification tasks.
 
 re3d.json: An example for NER tasks.
 
