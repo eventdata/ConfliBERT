@@ -1,4 +1,4 @@
-# ConfliBERT
+# ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence (NAACL 2022)
 
 This repository contains the essential code for the paper [ConfliBERT: A Pre-trained Language Model for Political Conflict and
 Violence (NAACL 2022)](https://github.com/eventdata/ConfliBERT/blob/main/NAACL_2022___confliBERT.pdf).
