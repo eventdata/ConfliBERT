@@ -1,5 +1,5 @@
 /estilos?/
-/¿Libros?
+/libros?
 /coches
 /tierra
 /alimentos/
