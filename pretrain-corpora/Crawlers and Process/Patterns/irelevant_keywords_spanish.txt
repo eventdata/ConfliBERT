@@ -1,19 +1,20 @@
-/estilos?/
-/libros?
-/coches
-/tierra
+/\bestilos?\b/
+/libros?/
+/coches?/
+/carros?/
+/automóviles?/
+/tierra/
 /alimentos/
 /futuro/
-/salud
+/salud/
 /vida/
-/vida/
-/miembros/
+/miembros?/
 /dinero/
-/paquetes
-/fotos
+/paquetes?/
+/fotos?/
 /popular/
 /radio/
-/¿videos?
+/videos/
 \w+bola
 accidente
 álbum
@@ -22,9 +23,9 @@ animal
 arte
 artista
 athlet
-australiano.abierto
+australian.open
 Auto.Rac
-auto.rac
+autos?\b
 bádminton
 bbcthree
 bcs.campeón
@@ -32,9 +33,8 @@ bcs.nacional
 belleza
 ofertas.bcs
 Cartelera
-¿Libros? Revisar
-bolos
-bolos
+Libros? Revisar
+bolos\b
 boxeo
 Braves
 Cerveceros
@@ -44,7 +44,7 @@ negocio
 Cardenales
 carrera
 CBA.Playoffs
-celebrit
+celebrid
 campeonato
 campeón
 cine
@@ -80,26 +80,26 @@ moda
 ficción
 campo \w+ gol
 FIFA\b
-películas
+películas?\b
 FINA\b
 finalista
 finales
 financ
 fitness
-Minas.de.oro.floridas|FLOD
+Flowery.Gold.Mines|FLOD
 francés.abierto
 fund\b
 financiación
 galería
-juegos
-género
-regalos
+juegos?\b
+género\b
+regalos?\b
 portero
-goles
-golf
+goles\b
+golf\b
 Grammy
-gran.nacional
-gran.premio
+grand.national
+grand.prix
 grand.slam
 gráfico
 gimnástico
@@ -170,7 +170,7 @@ polo\b
 pop\b
 cultura popular
 Powerball
-precios
+precios?\b
 producto
 PSE\b
 mariscal de campo
@@ -185,17 +185,17 @@ resumen
 Remo
 rugby\N
 Russell.2000
-Índice.Russell.US
+Russell.US.Index
 ryder\b
 S&P
 vela
-ventas?\Nb
+ventas?\b
 puntuación \w+ gol
 puntuación\b
-goleadores
-goleadores
+goleadores\b
+goleadores\b
 vendedor
-semifinal
+semi.final
 semifinal
 disparar \w+ gol
 compras
@@ -217,8 +217,7 @@ nadar
 T-bill
 tech\b
 tecnología
-tecnología
-tecnología
+tecnología\b
 temperatura
 tenis
 teatro
@@ -233,16 +232,16 @@ Tesoros
 Tesorería
 Triatlón
 tv\b
-U\N- S\N. Abierto
+U\.S\. Open
 uefa\b
 us.open
 aventura
 vr\b
 tiempo
-Peso.
+Peso.?leventar
 Wimbledon
 ganar
-clásico.mundial
-serie.mundial
+world.classic
+world.series
 Yankees
 Turismo
