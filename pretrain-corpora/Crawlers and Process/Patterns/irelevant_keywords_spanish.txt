@@ -1,4 +1,4 @@
-/estilos?
+/estilos?/
 /¿Libros?
 /coches
 /tierra
