@@ -1,7 +1,7 @@
 # ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence (NAACL 2022)
 
 This repository contains the essential code for the paper [ConfliBERT: A Pre-trained Language Model for Political Conflict and
-Violence (NAACL 2022)](https://github.com/eventdata/ConfliBERT/blob/main/NAACL_2022___confliBERT.pdf).
+Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 
 ## Prerequisites
 The code is written by Python 3.6 in Linux system. The cuda version is 10.2. 
