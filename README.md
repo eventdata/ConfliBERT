@@ -114,9 +114,10 @@ Below is an example using 8 GPUs. We have provided our parameters in the Appendi
 
 If you find this repo useful in your research, please consider citing:
 
-	@inproceedings{conflibert2022,
+	@inproceedings{hu2022conflibert,
 	  title={ConfliBERT: A Pre-trained Language Model for Political Conflict and Violence},
-	  author={Hu, Yibo and Hosseini, Mohammad Saleh and Skorupa Parolin, Erick and Osorio, Javier and Khan, Latifur and Brandt, Patrick and D'Orazio, Vito},
+	  author={Hu, Yibo and Hosseini, MohammadSaleh and Parolin, Erick Skorupa and Osorio, Javier and Khan, Latifur and Brandt, Patrick and D’Orazio, Vito},
 	  booktitle={Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+	  pages={5469--5482},
 	  year={2022}
 	}
