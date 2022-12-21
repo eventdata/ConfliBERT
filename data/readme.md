@@ -1,4 +1,4 @@
-Below is a summary of the publicly available datasets. You probably need LDC to access some of the datasets. We don't own the copyrights. Please refer to and cite their sources. 
+Below is a summary of the publicly available datasets. You need LDC to access some of the datasets. We don't own the copyrights. Please refer to and cite their sources. 
 
 | Dataset                 | Original Links                                                               |
 |-------------------------|------------------------------------------------------------------------------|
