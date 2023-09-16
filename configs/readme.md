@@ -13,7 +13,7 @@ For example, when conducting experiments on the 'indiapoliceevent_sents' dataset
 ```json
 {
     "task": "multilabel",
-    "num_of_seeds": 10,
+    "num_of_seeds": 5,
     "initial_seed": 123,
     "epochs_per_seed": 5,
     "train_batch_size": 16,
