@@ -31,6 +31,7 @@ For example, when conducting experiments on the 'indiapoliceevent_sents' dataset
             "architecture": "bert",
             "do_lower_case": true
         }
+    ]
 }
 ```
 ### Experiment Options
