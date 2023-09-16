@@ -13,23 +13,23 @@ For example, when conducting experiments on the 'indiapoliceevent_sents' dataset
 ```json
 {
     "task": "multilabel",
-    "num_of_seeds": 5,
+    "num_of_seeds": 10,
     "initial_seed": 123,
     "epochs_per_seed": 5,
     "train_batch_size": 16,
     "max_seq_length": 128,
     "models": [
         {
-            "model_name": "ConfliBERT-scr-cased",
-            "model_path": "snowood1/ConfliBERT-scr-cased",
+            "model_name": "ConfliBERT-scr-uncased",
+            "model_path": "snowood1/ConfliBERT-scr-uncased",
             "architecture": "bert",
-            "do_lower_case": false
+            "do_lower_case": true
         },
         {
             "model_name": "bert-base-cased",
-            "model_path": "snowood1/ConfliBERT-scr-cased",
+            "model_path": "bert-base-cased",
             "architecture": "bert",
-            "do_lower_case": true
+            "do_lower_case": false
         }
     ]
 }
