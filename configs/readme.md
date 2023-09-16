@@ -8,6 +8,31 @@ For example, when conducting experiments on the 'indiapoliceevent_sents' dataset
 
 - **re3d.json:** An example file for Named Entity Recognition (NER) tasks.
 
+## Configuration Example (IndiaPoliceEvents_sents.json)
+
+```json
+{
+    "task": "multilabel",
+    "num_of_seeds": 5,
+    "initial_seed": 123,
+    "epochs_per_seed": 5,
+    "train_batch_size": 16,
+    "max_seq_length": 128,
+    "models": [
+        {
+            "model_name": "ConfliBERT-scr-cased",
+            "model_path": "snowood1/ConfliBERT-scr-cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "bert-base-cased",
+            "model_path": "snowood1/ConfliBERT-scr-cased",
+            "architecture": "bert",
+            "do_lower_case": true
+        }
+}
+```
 ### Experiment Options
 
 - **"tasks"**: Choose from the following task types: ["binary", "multiclass", "multilabel", "ner"]
@@ -24,14 +49,9 @@ For example, when conducting experiments on the 'indiapoliceevent_sents' dataset
 
 ### Model Selection
 
-You can select from a list of available models. For example, "ConfliBERT-scr-uncased" is one of the options:
+You have the flexibility to choose from a list of available models for your experiments. If you wish to experiment with just one model, simply include that single model. If you want to experiment with multiple models, you can add them to the list.
 
-```json
-{
-    "model_name": "ConfliBERT-scr-uncased",
-    "model_path": "snowood1/ConfliBERT-scr-uncased", 
-    "architecture": "bert",
-    "do_lower_case": true, 
-}
-```
-Where model_path refers to its Hugging Face model card address:  https://huggingface.co/snowood1/ConfliBERT-scr-uncased.
+For example, our example configuration includes two models: "ConfliBERT-scr-uncased" and "bert-cased." Both of these models will be run with the same set of hyperparameters.
+
+The **model_path** refers to its Hugging Face model card address, such as [https://huggingface.co/snowood1/ConfliBERT-scr-uncased](https://huggingface.co/snowood1/ConfliBERT-scr-uncased).
+
