@@ -1,5 +1,5 @@
 This folder contains configuration files for running experiments. 
-For example, when conducting experiments on the 'indiapoliceevent_sents' dataset, you should use the 'IndiaPoliceEvents_sents.json' configuration file.
+For example, when conducting experiments on the 'IndiaPoliceEvents_sents' dataset, you should use the 'IndiaPoliceEvents_sents.json' configuration file.
 
 
 ### Example Files
