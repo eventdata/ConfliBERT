@@ -47,6 +47,8 @@ For example, when conducting experiments on the 'IndiaPoliceEvents_sents' datase
 - **"train_batch_size"**: Set the training batch size.
 
 - **"max_seq_length"**: Determine the maximum sequence length.
+  
+- **"models"**: Model selection.
 
 ### Model Selection
 
