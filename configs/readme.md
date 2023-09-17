@@ -58,3 +58,47 @@ For example, our example configuration includes two models: "ConfliBERT-scr-unca
 
 The **model_path** refers to its Hugging Face model card address, such as [https://huggingface.co/snowood1/ConfliBERT-scr-uncased](https://huggingface.co/snowood1/ConfliBERT-scr-uncased).
 
+We have tested six models in our experiments:
+
+```json
+
+        {
+            "model_name": "ConfliBERT-scr-cased",
+            "model_path": "snowood1/ConfliBERT-scr-cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "ConfliBERT-scr-uncased",
+            "model_path": "snowood1/ConfliBERT-scr-uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        },
+        {
+            "model_name": "ConfliBERT-cont-cased",
+            "model_path": "snowood1/ConfliBERT-cont-cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "ConfliBERT-cont-uncased",
+            "model_path": "snowood1/ConfliBERT-cont-uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        },
+        {
+            "model_name": "bert-base-cased",
+            "model_path": "bert-base-cased",
+            "architecture": "bert",
+            "do_lower_case": false
+        },
+        {
+            "model_name": "bert-base-uncased",
+            "model_path": "bert-base-uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        }
+
+```
+
+Besides the above six models, any pretrained model of that type found in the [Hugging Face docs] (https://huggingface.co/transformers/v3.3.1/pretrained_models.html) should work. The architecture type available for each task can be found under their respective section. To use any of them set the correct architecture and model_name in the args dictionary.
