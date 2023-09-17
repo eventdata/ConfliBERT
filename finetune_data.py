@@ -31,7 +31,7 @@ def report_per_epoch(args, test_df, seed, model_configs):
                 model = MultiLabelClassificationModel(model_configs["architecture"], checkpoint_dir)
 
                 ## Performance data: Evaluating the model on test data
-                predictions, raw_outputs = model.predict(test_df.text)
+                predictions, raw_outputs = model.predict(test_df.text.to_list())
                 result_test, model_outputs, wrong_predictions = model.eval_model(test_df)
     
                 result = {k: float(v) for k, v in result_test.items()}
@@ -107,7 +107,7 @@ def report_per_epoch(args, test_df, seed, model_configs):
                 model = ClassificationModel(model_configs["architecture"], checkpoint_dir)
 
                 # Evaluating the model on test data
-                predictions, raw_outputs = model.predict(test_df.text)
+                predictions, raw_outputs = model.predict(test_df.text.to_list())
                 truth = list(test_df.labels)
                 result_np, model_outputs, wrong_predictions = model.eval_model(test_df)
 
@@ -263,7 +263,7 @@ def train_multilabel(args, train_df, eval_df, test_df, seed, model_configs):
     model.train_model(train_df, eval_df=eval_df) 
 
     # Evaluatinge the model on test data
-    predictions, raw_outputs = model.predict(test_df.text)
+    predictions, raw_outputs = model.predict(test_df.text.to_list())
     result_test, model_outputs, wrong_predictions = model.eval_model(test_df)
 
     # Collecting relevant results
@@ -330,7 +330,7 @@ def train_multiclass(args, train_df, eval_df, test_df, seed, model_configs):
     model.train_model(train_df, eval_df=eval_df)
 
     # Evaluating the model on test data
-    predictions, raw_outputs = model.predict(test_df.text)
+    predictions, raw_outputs = model.predict(test_df.text.to_list())
     truth = list(test_df.labels)
     result_np, model_outputs, wrong_predictions = model.eval_model(test_df)
     
