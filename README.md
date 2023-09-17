@@ -11,7 +11,7 @@ The necessary packages include:
 	transformers==4.17.0 
 	numpy==1.19.2 
 	scikit-learn==0.24.2
-	pandas==1.1.5
+	pandas==1.5.3
 	simpletransformers
 
 ## ConfliBERT Checkpoints
