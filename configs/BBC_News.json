@@ -7,38 +7,8 @@
     "max_seq_length": 512,
     "models": [
         {
-            "model_name": "ConfliBERT-scr-cased",
-            "model_path": "snowood1/ConfliBERT-scr-cased",
-            "architecture": "bert",
-            "do_lower_case": false
-        },
-        {
             "model_name": "ConfliBERT-scr-uncased",
             "model_path": "snowood1/ConfliBERT-scr-uncased",
-            "architecture": "bert",
-            "do_lower_case": true
-        },
-        {
-            "model_name": "ConfliBERT-cont-cased",
-            "model_path": "snowood1/ConfliBERT-cont-cased",
-            "architecture": "bert",
-            "do_lower_case": false
-        },
-        {
-            "model_name": "ConfliBERT-cont-uncased",
-            "model_path": "snowood1/ConfliBERT-cont-uncased",
-            "architecture": "bert",
-            "do_lower_case": true
-        },
-        {
-            "model_name": "bert-base-cased",
-            "model_path": "bert-base-cased",
-            "architecture": "bert",
-            "do_lower_case": false
-        },
-        {
-            "model_name": "bert-base-uncased",
-            "model_path": "bert-base-uncased",
             "architecture": "bert",
             "do_lower_case": true
         }
