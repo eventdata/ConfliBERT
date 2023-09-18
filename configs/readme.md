@@ -36,7 +36,20 @@ For example, when conducting experiments on the 'IndiaPoliceEvents_sents' datase
 ```
 ### Experiment Options
 
-- **"tasks"**: Choose from the following task types: ["binary", "multiclass", "multilabel", "ner"]
+- **"tasks"**: Choose from the following task types: ["binary", "multiclass", "multilabel", "ner"] for the dataset. Below are the defined task for the processed datasets in the paper:
+
+| Dataset | Task |
+| :-------- | :-------- |
+|20news| binary |
+| BBC_News | binary |
+| IndiaPoliceEvents_doc | multilabel |
+| IndiaPoliceEvents_sents | multilabel|
+| cameo_class | multiclass |
+| cameo_ner | ner |
+| insightCrime | multilabel |
+| re3d | ner |
+| satp_relevant | multilabel|
+
 
 - **"num_of_seeds"**: Decide how many experiments you want to repeat with different random seeds to calculate average results for analysis.
 
