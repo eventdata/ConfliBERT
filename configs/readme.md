@@ -101,4 +101,4 @@ We have tested six models in our experiments:
 
 ```
 
-Besides the above six models, any pretrained model of that type found in the [Hugging Face docs] (https://huggingface.co/transformers/v3.3.1/pretrained_models.html) should work. The architecture type available for each task can be found under their respective section. To use any of them set the correct architecture and model_name in the args dictionary.
+Besides the above six models, any pretrained model of that type found in the [Hugging Face docs](https://huggingface.co/transformers/v3.3.1/pretrained_models.html) should work. The architecture type available for each task can be found under their respective section. To use any of them set the correct architecture and model_name in the args dictionary.
