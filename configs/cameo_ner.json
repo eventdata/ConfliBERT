@@ -1,0 +1,16 @@
+{
+    "task": "ner",
+    "num_of_seeds": 3,
+    "initial_seed": 123,
+    "epochs_per_seed": 5,
+    "train_batch_size": 16,
+    "max_seq_length": 128,
+    "models": [
+        {
+            "model_name": "ConfliBERT-scr-uncased",
+            "model_path": "snowood1/ConfliBERT-scr-uncased",
+            "architecture": "bert",
+            "do_lower_case": true
+        }
+    ]
+}
