@@ -3,16 +3,85 @@
 This repository contains the essential code for the paper [ConfliBERT: A Pre-trained Language Model for Political Conflict and
 Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 
-## Prerequisites
-The code is written by Python 3.6 in Linux system. The cuda version is 10.2. 
-The necessary packages include:
+# ConfliBERT Setup Guide
 
-	torch==1.7.1 
-	transformers==4.17.0 
-	numpy==1.19.2 
-	scikit-learn==0.24.2
-	pandas==1.5.3
-	simpletransformers
+## Quick Start Options
+
+### 🆕 New to Python?
+If you're new to Python or prefer a no-setup solution, we recommend starting with our:
+1. [Interactive Colab Demo](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
+2. [ConfliBERT GUI](https://eventdata.utdallas.edu/conflibert-gui/) - Explore all ConfliBERT's capabilities through a user-friendly interface. You can:
+   - Analyze political texts for conflict events
+   - Extract event information
+   - Classify conflict types
+   - Perform sentiment analysis
+   - And more!
+
+### 💻 Experienced with Python?
+If you're comfortable with Python and want to set up ConfliBERT locally, continue with the installation guide below.
+
+## Additional Resources
+- [Interactive Demo](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing)
+- [ConfliBERT GUI](https://eventdata.utdallas.edu/conflibert-gui/)
+- [Original Paper](https://aclanthology.org/2022.naacl-main.400/)
+- [Hugging Face Documentation](https://huggingface.co/snowood1/ConfliBERT-scr-uncased)
+
+## Prerequisites
+
+ConfliBERT requires Python 3.6+ and CUDA 10.2+ on a Linux system. You can install the dependencies using either conda (recommended) or pip.
+
+### Option 1: Using Conda (Recommended)
+```bash
+# Create and activate a new conda environment
+conda create -n conflibert python=3.6
+conda activate conflibert
+
+# Install PyTorch with CUDA support
+conda install pytorch==1.7.1 cudatoolkit=10.2 -c pytorch
+
+# Install other dependencies
+pip install transformers==4.17.0
+pip install numpy==1.19.2
+pip install scikit-learn==0.24.2
+pip install pandas==1.5.3
+pip install simpletransformers
+```
+
+### Option 2: Using Pip Only
+```bash
+# Create and activate a virtual environment (optional but recommended)
+python3 -m venv conflibert-env
+source conflibert-env/bin/activate
+
+# Install all dependencies
+pip install torch==1.7.1
+pip install transformers==4.17.0
+pip install numpy==1.19.2
+pip install scikit-learn==0.24.2
+pip install pandas==1.5.3
+pip install simpletransformers
+```
+
+### Verify Installation
+After installation, verify your setup:
+```python
+import torch
+import transformers
+import numpy
+import sklearn
+import pandas
+from simpletransformers.model import TransformerModel
+
+# Check CUDA availability
+print(f"CUDA available: {torch.cuda.is_available()}")
+print(f"PyTorch version: {torch.__version__}")
+print(f"Transformers version: {transformers.__version__}")
+```
+
+### Common Issues
+- If you encounter CUDA errors, ensure your NVIDIA drivers are properly installed: `nvidia-smi`
+- For pip-only installation, you might need to install CUDA toolkit separately
+- If you face dependency conflicts, try installing packages one at a time
 
 ## ConfliBERT Checkpoints
 We provided four versions of ConfliBERT:
