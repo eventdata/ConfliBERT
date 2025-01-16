@@ -5,7 +5,9 @@ Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 
 # ConfliBERT Setup Guide
 
-## Quick Start Options
+## Choose Your Path
+Not sure where to start? Check our [Installation Decision Workflow](#installation-decision-workflow) to find the best path for your experience level and needs.
+
 
 ### 🆕 New to Python?
 If you're new to Python or prefer a no-setup solution, we recommend starting with our:
@@ -191,3 +193,8 @@ If you find this repo useful in your research, please consider citing:
 	  pages={5469--5482},
 	  year={2022}
 	}
+
+## Installation Decision Workflow
+![ConfliBERT Installation Decision Workflow](../readme-docs/workflow.png)
+
+Use this workflow diagram to help decide the best installation path based on your experience level and needs.
