@@ -14,8 +14,8 @@ If you're new to Python or prefer a no-setup solution, we recommend starting wit
    - Analyze political texts for conflict events
    - Extract event information
    - Classify conflict types
-   - Perform sentiment analysis
-   - And more!
+   - Binary classification (conflict/non-conflict)
+   - And more! (QA coming soon!)
 
 ### 💻 Experienced with Python?
 If you're comfortable with Python and want to set up ConfliBERT locally, continue with the installation guide below.
