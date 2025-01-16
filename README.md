@@ -195,6 +195,6 @@ If you find this repo useful in your research, please consider citing:
 	}
 
 ## Installation Decision Workflow
-![ConfliBERT Installation Decision Workflow](../readme-docs/workflow.png)
+![ConfliBERT Installation Decision Workflow](/readme-docs/workflow.png)
 
 Use this workflow diagram to help decide the best installation path based on your experience level and needs.
