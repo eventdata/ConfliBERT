@@ -9,7 +9,7 @@ Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 
 ### 🆕 New to Python?
 If you're new to Python or prefer a no-setup solution, we recommend starting with our:
-1. [Interactive Colab Demo](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
+1. [![Google Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
 2. [ConfliBERT GUI](https://eventdata.utdallas.edu/conflibert-gui/) - Explore all ConfliBERT's capabilities through a user-friendly interface. You can:
    - Analyze political texts for conflict events
    - Extract event information
