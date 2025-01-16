@@ -21,10 +21,9 @@ If you're new to Python or prefer a no-setup solution, we recommend starting wit
 If you're comfortable with Python and want to set up ConfliBERT locally, continue with the installation guide below.
 
 ## Additional Resources
-- [Interactive Demo](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing)
-- [ConfliBERT GUI](https://eventdata.utdallas.edu/conflibert-gui/)
 - [Original Paper](https://aclanthology.org/2022.naacl-main.400/)
 - [Hugging Face Documentation](https://huggingface.co/snowood1/ConfliBERT-scr-uncased)
+- [EventData Hugging Face (finetuned models)](https://huggingface.co/eventdata-utd)
 
 ## Prerequisites
 
