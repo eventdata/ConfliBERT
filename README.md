@@ -35,14 +35,12 @@ ConfliBERT requires Python 3.6+ and CUDA 10.2+ on a Linux system. You can instal
 conda create -n conflibert python=3.6
 conda activate conflibert
 
-# Install PyTorch with CUDA support
+# Install packages available through conda
 conda install pytorch==1.7.1 cudatoolkit=10.2 -c pytorch
+conda install numpy==1.19.2 scikit-learn==0.24.2 pandas==1.5.3 -c conda-forge
 
-# Install other dependencies
+# Install remaining packages not available in conda main channels
 pip install transformers==4.17.0
-pip install numpy==1.19.2
-pip install scikit-learn==0.24.2
-pip install pandas==1.5.3
 pip install simpletransformers
 ```
 
