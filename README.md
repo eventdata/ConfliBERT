@@ -38,15 +38,23 @@ conda create -n conflibert python=3.6
 conda activate conflibert
 
 # Install packages available through conda
+# Step 1: Set up PyTorch with CUDA support
 conda install pytorch==1.7.1 cudatoolkit=10.2 -c pytorch
+
+# Step 2: Install core data science packages
+# Option A: Install specific versions (recommended)
 conda install numpy==1.19.2 scikit-learn==0.24.2 pandas==1.5.3 -c conda-forge
-%% OR IF YOU GET ERRORS - use this 
-conda install numpy scikit-learn pandas -c conda-forge
 
+# Option B: If Option A fails, install latest compatible versions
+# conda install numpy scikit-learn pandas -c conda-forge
 
-# Install remaining packages not available in conda main channels
+# Step 3: Install transformer libraries
+# Option A: Install specific version (recommended)
 pip install transformers==4.17.0
-pip install simpletransformers
+
+# Option B: If you encounter Rust compiler errors, use these commands instead
+# pip install --prefer-binary tokenizers
+# pip install simpletransformers
 ```
 
 ### Option 2: Using Pip Only
