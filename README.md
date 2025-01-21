@@ -40,6 +40,9 @@ conda activate conflibert
 # Install packages available through conda
 conda install pytorch==1.7.1 cudatoolkit=10.2 -c pytorch
 conda install numpy==1.19.2 scikit-learn==0.24.2 pandas==1.5.3 -c conda-forge
+%% OR IF YOU GET ERRORS - use this 
+conda install numpy scikit-learn pandas -c conda-forge
+
 
 # Install remaining packages not available in conda main channels
 pip install transformers==4.17.0
