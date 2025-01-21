@@ -51,10 +51,11 @@ conda install numpy==1.19.2 scikit-learn==0.24.2 pandas==1.5.3 -c conda-forge
 # Step 3: Install transformer libraries
 # Option A: Install specific version (recommended)
 pip install transformers==4.17.0
+pip install simpletransformers
 
 # Option B: If you encounter Rust compiler errors, use these commands instead
 # pip install --prefer-binary tokenizers
-# pip install simpletransformers
+
 ```
 
 ### Option 2: Using Pip Only
