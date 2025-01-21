@@ -53,15 +53,18 @@ pip install simpletransformers
 ```bash
 # Create and activate a virtual environment (optional but recommended)
 python3 -m venv conflibert-env
-source conflibert-env/bin/activate
+source conflibert-env/bin/activate  # On Windows use: conflibert-env\Scripts\activate
 
-# Install all dependencies
-pip install torch==1.7.1
-pip install transformers==4.17.0
-pip install numpy==1.19.2
-pip install scikit-learn==0.24.2
-pip install pandas==1.5.3
+# Install core packages
+pip install torch  # Latest stable version
+pip install numpy scikit-learn pandas  # Latest compatible versions
+
+# Install transformer libraries 
+pip install transformers
 pip install simpletransformers
+
+# Optional: If you need GPU support, install CUDA toolkit
+# Download from: https://developer.nvidia.com/cuda-downloads
 ```
 
 ### Verify Installation
