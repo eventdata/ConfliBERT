@@ -29,7 +29,7 @@ If you're comfortable with Python and want to set up ConfliBERT locally, continu
 
 ## Prerequisites
 
-ConfliBERT requires Python 3.6+ and CUDA 10.2+ on a Linux system. You can install the dependencies using either conda (recommended) or pip.
+ConfliBERT requires Python 3 and CUDA (for GPU accel). You can install the dependencies using either conda (recommended) or pip.
 
 ### Option 1: Using Conda (Recommended)
 ```bash
