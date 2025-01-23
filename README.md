@@ -6,7 +6,7 @@ Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 # ConfliBERT Setup Guide
 
 ## Choose Your Path
-Not sure where to start? Check our [Installation Decision Workflow](#installation-decision-workflow) to find the best path for your experience level and needs.
+Not sure where to start and why a research scholar would use ConfliBERT? Check our [Installation Decision Workflow](#installation-decision-workflow) to find the best path for your experience level and needs.
 
 
 ### 🆕 New to Python?
@@ -201,7 +201,13 @@ If you find this repo useful in your research, please consider citing:
 	  year={2022}
 	}
 
-## Installation Decision Workflow
+
+## ConfliBERT Workflows
+
+### Technical Installation Path
 <img src="/readme-docs/workflow.png" alt="ConfliBERT Installation Decision Workflow" width="70%">
 
-Use this workflow diagram to help decide the best installation path based on your experience level and needs!
+### Research Usage Path
+<img src="/readme-docs/conflibert-tasks.png" alt="ConfliBERT Research Tasks Workflow" width="70%">
+
+These workflows help you navigate both technical setup and research planning with ConfliBERT.
