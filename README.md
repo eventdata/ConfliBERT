@@ -26,6 +26,7 @@ If you're comfortable with Python and want to set up ConfliBERT locally, continu
 - [Original Paper](https://aclanthology.org/2022.naacl-main.400/)
 - [Hugging Face Documentation](https://huggingface.co/snowood1/ConfliBERT-scr-uncased)
 - [EventData Hugging Face (finetuned models)](https://huggingface.co/eventdata-utd)
+- [ConfliBERT Documentation (Work in Progress!)](https://github.com/eventdata/ConfliBERT-Manual)
 
 ## Prerequisites
 
