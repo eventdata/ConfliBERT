@@ -1,0 +1,22 @@
+álbum
+ficción
+firma
+película
+paralímpico
+deporte
+cementer
+novela
+juego
+jugar
+cultura popular
+Entorno de
+\w+bola
+diseño
+Vida silvestre
+fauna
+marcial
+AC\b
+accidente
+desastre
+Barcos construidos
+Barcos de\b
