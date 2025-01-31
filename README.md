@@ -9,15 +9,29 @@ Violence (NAACL 2022)](https://aclanthology.org/2022.naacl-main.400/).
 Not sure where to start and why a research scholar would use ConfliBERT? Check our [Installation Decision Workflow](#installation-decision-workflow) to find the best path for your experience level and needs.
 
 
-### 🆕 New to Python?
-If you're new to Python or prefer a no-setup solution, we recommend starting with our:
-1. [![Google Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
-2. [ConfliBERT GUI](https://eventdata.utdallas.edu/conflibert-gui/) - Explore all ConfliBERT's capabilities through a user-friendly interface. You can:
-   - Analyze political texts for conflict events
-   - Extract event information
-   - Classify conflict types
-   - Binary classification (conflict/non-conflict)
-   - And more! (QA coming soon)
+#### 🆕 New to Python?
+We offer multiple ways to get started with ConfliBERT:
+
+1. **Browser-Based Options**
+  - [![Google Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1d4557lxoDWKTx0FWcmSPlLx9UEn2BdcA?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
+  - [Cloud GUI](https://eventdata.utdallas.edu/conflibert-gui/) - Access through our hosted web interface
+
+2. **Local GUI Installation**
+  Run ConfliBERT's interface on your own machine for enhanced privacy and speed:
+
+  ```bash
+  # Clone repository
+  git clone https://huggingface.co/spaces/eventdata-utd/ConfliBERT-GUI-v2
+  cd ConfliBERT-GUI-v2
+
+  # Create and activate Python environment
+  python -m venv env
+  source env/bin/activate  # On Windows use: env\Scripts\activate
+
+  # Install dependencies and run
+  pip install -r requirements.txt
+  python app.py
+  ```
 
 ### 💻 Experienced with Python?
 If you're comfortable with Python and want to set up ConfliBERT locally, continue with the installation guide below.
