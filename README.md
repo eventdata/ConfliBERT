@@ -18,23 +18,29 @@ We offer multiple ways to get started with ConfliBERT:
 
 2. **Local GUI Installation**
   Run ConfliBERT's interface on your own machine for enhanced privacy and speed:
-
 Clone the repository to a local directory (do not clone to cloud storage, venv installs will be very slow if you do): 
 ```bash
 git clone https://github.com/shreyasmeher/conflibert-gui.git
 cd conflibert-gui
 ```
-
 Create and activate a virtual environment:
 ```bash
 python -m venv env
 source env/bin/activate  # On Windows, use: env\Scripts\activate
 ```
-
 Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
+Start the application:
+```bash
+python app.py
+```
+The app will provide two URLs in the terminal:
+- A local URL (e.g., http://127.0.0.1:7860 or http://localhost:7860)
+- A public URL (to access from other devices)
+
+Open either URL in your web browser to use the interface.
 
 ### 💻 Experienced with Python?
 If you're comfortable with Python and want to set up ConfliBERT locally, continue with the installation guide below.
