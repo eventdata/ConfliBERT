@@ -258,7 +258,7 @@ mv conflibert_latest.sif conflibert.sif
 ### Run container:
 ```bash
 #You can add or remove the nv flag depending on whether you will be using NVIDIA graphics card(s).
-singularity exec --nv --pwd /app --fakeroot --writable -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
+singularity exec --nv --pwd /app --fakeroot --writable conflibert.sif bash -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
 ```
 
 ## Citation
