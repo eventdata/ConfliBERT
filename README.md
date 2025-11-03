@@ -254,15 +254,11 @@ sudo apt install --fix-missing && \
 singularity pull library://ethan/ethan/conflibert.sif:latest && \
 #The following could be necessary to rename the sif image file correctly:
 mv conflibert_latest.sif conflibert.sif
-mkdir cache_dir && \
-mkdir outputs && \
-mkdir runs && \
-mkdir logs && \
 ```
 ### Run container:
 ```bash
 #You can add or remove the nv flag depending on whether you will be using NVIDIA graphics card(s).
-singularity exec --nv --pwd /app -B ./cache_dir:/app/cache_dir -B ./outputs:/app/outputs -B ./runs:/app/runs conflibert.sif -B ./logs:/app/logs bash -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
+singularity exec --nv --pwd /app --fakeroot --writable -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
 ```
 
 ## Citation
