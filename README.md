@@ -261,6 +261,8 @@ mv conflibert_latest.sif conflibert.sif
 singularity exec --nv --pwd /app --fakeroot --writable conflibert.sif bash -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
 ```
 
+[![Tutorial](https://img.youtube.com/vi/Ee4Nu3sHfjY/0.jpg)](https://www.youtube.com/watch?v=Ee4Nu3sHfjY)
+
 ## Citation
 
 If you find this repo useful in your research, please consider citing:
