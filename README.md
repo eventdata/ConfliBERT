@@ -263,8 +263,6 @@ singularity exec --nv --pwd /app --fakeroot --writable conflibert.sif bash -c "p
 
 [![Tutorial](https://img.youtube.com/vi/Ee4Nu3sHfjY/0.jpg)](https://www.youtube.com/watch?v=Ee4Nu3sHfjY)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ee4Nu3sHfjY?si=8VUYD0Do3XIJXxZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Citation
 
 If you find this repo useful in your research, please consider citing:
