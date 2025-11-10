@@ -212,7 +212,7 @@ Below is an example using 8 GPUs. We have provided our parameters in the Appendi
 	--fp16 True --weight_decay=0.01
 ```
 
-# Containerized Evaluation:
+## Containerized Evaluation:
 
 ### Note:
 For high-powered PCs without a modern GPU use finetune_data_cpu.py, and for traditional laptops (RAM < 32GB) without a modern GPU use finetune_data_cpu_low.py
@@ -221,37 +221,47 @@ For high-powered PCs without a modern GPU use finetune_data_cpu.py, and for trad
 ### Installation:
 ```bash
 #On linux:
-sudo apt update
-sudo apt install docker.io
+sudo apt update && \
+sudo apt install docker.io && \
 #On Windows:
 #Download and install the docker desktop installer from this website:
 #https://www.docker.com/products/docker-desktop/
 #On Both:
-docker pull zawad1879/conflibert:latest
-docker create --gpus all --name conflibert_container zawad1879/conflibert:latest #This command may require admin privileges (sudo)
+docker pull zawad1879/conflibert:latest && \
+#Don't use "--gpus all" if you'll be running the cpu version of the model (you don't have a gpu)
+docker create --gpus all --name conflibert_container zawad1879/conflibert:latest tail -f /dev/null #This command may require admin privileges (sudo)
 ```
 ### Run container:
 ```bash
-docker start conflibert_container
-docker exec conflibert_container CUDA_VISIBLE_DEVICES=0 python finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch
+docker start conflibert_container && \
+docker exec conflibert_container python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch
 ```
+
+### More Info:
+More info can be found here: https://github.com/shreyasmeher/ConfliBERT-docker
 
 ## Evaluation: Using Singularity on Linux
 ### Installation:
 ```bash
-sudo apt update
+sudo apt update && \
 #Download the singularity installer for your linux version here (This version uses ubuntu version 24 noble):
 #https://github.com/sylabs/singularity/releases/download/v4.3.2/singularity-ce_4.3.2-noble_amd64.deb
 #To find more versions follow the link here:
 #https://github.com/sylabs/singularity/releases
-sudo dpkg -i singularity-ce_4.3.2-noble_amd64.deb #You can replace this with your version if it's different
-singularity pull library://ethan/ethan/conflibert.sif:latest
+sudo dpkg -i singularity-ce_4.3.2-noble_amd64.deb && \ #You can replace this with your version if it's different
+#if the previous command resulted in an incomplete installation due to missing packages:
+sudo apt install --fix-missing && \
+singularity pull library://ethan/ethan/conflibert.sif:latest && \
+#The following could be necessary to rename the sif image file correctly:
+mv conflibert_latest.sif conflibert.sif
 ```
 ### Run container:
 ```bash
 #You can add or remove the nv flag depending on whether you will be using NVIDIA graphics card(s).
-singularity exec --nv conflibert.sif python finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch
+singularity exec --nv --pwd /app --fakeroot --writable conflibert.sif bash -c "python3 finetune_data.py --dataset IndiaPoliceEvents_sents --report_per_epoch"
 ```
+
+[![Tutorial](https://img.youtube.com/vi/Ee4Nu3sHfjY/0.jpg)](https://www.youtube.com/watch?v=Ee4Nu3sHfjY)
 
 ## Citation
 
