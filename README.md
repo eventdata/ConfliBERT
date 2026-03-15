@@ -16,6 +16,7 @@ We offer multiple ways to get started with ConfliBERT:
   - [![Google Colab Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1RPyrX0c8FeZbvx_Ad8QI_2GMYbAr3fd_?usp=sharing) - Try ConfliBERT directly in your browser with no installation required
   - [Cloud GUI](https://eventdata.utdallas.edu/conflibert-gui/) - Access through our hosted web interface
   - [![Downstream Tasks Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YW3X7pS1Fdq_N9bnLdwCbu3P6WQwSPbl?usp=sharing) - Explore downstream tasks interactively with ConfliBERT
+  - [![No simpletransformers](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eduYI7ld0kCIItxhWEhdo2xsqH0fCAX_?usp=drive_link) - Fine-tuning demo without simpletransformers
 
 2. **Local GUI Installation**
   Run ConfliBERT's interface on your own machine for enhanced privacy and speed:
