@@ -1,28 +1,14 @@
-# Core ML and NLP libraries
-transformers>=4.7.0
-datasets
-torch
-numpy
-pandas
-scikit-learn
-seqeval
+# Core ML / NLP
+transformers>=4.44.2
+datasets>=3.0.1
+accelerate>=1.1.0
+torch>=2.8.0
 
-# SimpleTransformers for fine-tuning
-simpletransformers
+# Data processing
+numpy>=2.0.2
+pandas>=2.3.3
+scikit-learn>=1.6.1
+seqeval>=1.2.2
 
-# Data processing and web scraping
-beautifulsoup4
-requests
-newspaper3k
-unidecode
-pandarallel
-
-# Visualization and utilities
-matplotlib
+# Notebook
 jupyter
-
-# Additional utility libraries (used in preprocessing notebooks)
-# Note: Some of these may be optional depending on your specific use case
-# Uncomment as needed:
-# wget
-# pathlib2  # Only needed for Python < 3.4
