@@ -273,6 +273,7 @@ def train_binary(args, train_df, eval_df, test_df, seed, model_configs):
     trainer = Trainer(model=model, args=_build_training_args(args, seed, args.report_per_epoch),
                       train_dataset=train_dataset, eval_dataset=eval_dataset, compute_metrics=compute_metrics)
     trainer.train()
+    trainer.save_model(os.path.join(args.output_dir, "best_model"))
     out = trainer.predict(test_dataset)
     return _compute_binary_result(np.argmax(out.predictions, axis=-1), np.array(test_df['labels']))
 
@@ -298,6 +299,7 @@ def train_multilabel(args, train_df, eval_df, test_df, seed, model_configs):
     trainer = Trainer(model=model, args=_build_training_args(args, seed, args.report_per_epoch),
                       train_dataset=train_dataset, eval_dataset=eval_dataset, compute_metrics=compute_metrics)
     trainer.train()
+    trainer.save_model(os.path.join(args.output_dir, "best_model"))
 
     out = trainer.predict(test_dataset)
     y_pred = (out.predictions >= 0).astype(int).tolist()
@@ -334,6 +336,7 @@ def train_multiclass(args, train_df, eval_df, test_df, seed, model_configs):
     trainer = Trainer(model=model, args=_build_training_args(args, seed, args.report_per_epoch),
                       train_dataset=train_dataset, eval_dataset=eval_dataset, compute_metrics=compute_metrics)
     trainer.train()
+    trainer.save_model(os.path.join(args.output_dir, "best_model"))
 
     out = trainer.predict(test_dataset)
     return _compute_multiclass_result(list(test_df['labels']), np.argmax(out.predictions, axis=-1).tolist())
@@ -366,6 +369,7 @@ def train_ner(args, train_df, eval_df, test_df, seed, model_configs):
                       data_collator=DataCollatorForTokenClassification(tokenizer),
                       compute_metrics=compute_metrics)
     trainer.train()
+    trainer.save_model(os.path.join(args.output_dir, "best_model"))
 
     out = trainer.predict(test_dataset)
     y_true, y_pred = _decode_ner_labels(
