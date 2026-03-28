@@ -274,6 +274,7 @@ def train_binary(args, train_df, eval_df, test_df, seed, model_configs):
                       train_dataset=train_dataset, eval_dataset=eval_dataset, compute_metrics=compute_metrics)
     trainer.train()
     trainer.save_model(os.path.join(args.output_dir, "best_model"))
+    tokenizer.save_pretrained(os.path.join(args.output_dir, "best_model"))
     out = trainer.predict(test_dataset)
     return _compute_binary_result(np.argmax(out.predictions, axis=-1), np.array(test_df['labels']))
 
@@ -288,7 +289,8 @@ def train_multilabel(args, train_df, eval_df, test_df, seed, model_configs):
     test_dataset = _tokenize_classification(test_df, tokenizer, args.max_seq_length, multilabel=True)
 
     model = AutoModelForSequenceClassification.from_pretrained(
-        pretrained, num_labels=args.num_labels, problem_type="multi_label_classification"
+        pretrained,
+        num_labels=args.num_labels, problem_type="multi_label_classification"
     )
 
     def compute_metrics(eval_pred):
@@ -337,7 +339,7 @@ def train_multiclass(args, train_df, eval_df, test_df, seed, model_configs):
                       train_dataset=train_dataset, eval_dataset=eval_dataset, compute_metrics=compute_metrics)
     trainer.train()
     trainer.save_model(os.path.join(args.output_dir, "best_model"))
-
+    tokenizer.save_pretrained(os.path.join(args.output_dir, "best_model"))
     out = trainer.predict(test_dataset)
     return _compute_multiclass_result(list(test_df['labels']), np.argmax(out.predictions, axis=-1).tolist())
 
@@ -355,7 +357,8 @@ def train_ner(args, train_df, eval_df, test_df, seed, model_configs):
     test_dataset = _tokenize_ner(test_df, tokenizer, args.max_seq_length, label2id)
 
     model = AutoModelForTokenClassification.from_pretrained(
-        pretrained, num_labels=len(args.labels_list), id2label=id2label, label2id=label2id
+        pretrained,
+        num_labels=len(args.labels_list), id2label=id2label, label2id=label2id
     )
 
     def compute_metrics(eval_pred):
@@ -370,7 +373,8 @@ def train_ner(args, train_df, eval_df, test_df, seed, model_configs):
                       compute_metrics=compute_metrics)
     trainer.train()
     trainer.save_model(os.path.join(args.output_dir, "best_model"))
-
+    tokenizer.save_pretrained(os.path.join(args.output_dir, "best_model"))
+    
     out = trainer.predict(test_dataset)
     y_true, y_pred = _decode_ner_labels(
         np.array(test_dataset['labels']), np.argmax(out.predictions, axis=-1), id2label
@@ -421,7 +425,7 @@ def loadData(args):
                     data.append([row[0], int(row[1])])
         return (pd.DataFrame(train_data, columns=['text', 'labels']),
                 pd.DataFrame(eval_data, columns=['text', 'labels']),
-                pd.DataFrame(test_data, columns=['text', 'labels']), 1)
+                pd.DataFrame(test_data, columns=['text', 'labels']), 2)
 
     elif args.task == "ner":
         def _load_ner_file(path):
